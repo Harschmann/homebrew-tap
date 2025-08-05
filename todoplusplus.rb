@@ -10,7 +10,7 @@ class Todoplusplus < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.0/todoplusplus_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c1b60d2af8215ac70e391e9b0e0ea7596fc34e6a1c20c38baf64583cad730d89"
+      sha256 "423a2a11cd0c02479a9ddd43d8e6f32e42939eda516e4611a47b97a0c8930122"
 
       def install
         bin.install "todoplusplus"
@@ -18,7 +18,7 @@ class Todoplusplus < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.0/todoplusplus_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d6d6798853b131d635cd27e9913bfb2cfbafa793898d524479ac695cc1bf7622"
+      sha256 "11a5057e8f44abd83a768d559dbd70a8e21eb0b699b24f18cbfc1d7765c6f149"
 
       def install
         bin.install "todoplusplus"
@@ -29,14 +29,14 @@ class Todoplusplus < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.0/todoplusplus_0.1.0_linux_amd64.tar.gz"
-      sha256 "6340aee95acfc0c36730dad07aa8fd07c986f145336ea882df03511a3dcf85a9"
+      sha256 "2c1282f9974a484b6b9b124e1f9b5a6b1281fc2e65062886b980db08b62cdcc6"
       def install
         bin.install "todoplusplus"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.0/todoplusplus_0.1.0_linux_arm64.tar.gz"
-      sha256 "3c1cfe1c38fd39fa09682250ba7c128c2b191a6c02c655f993f7093d57920dfb"
+      sha256 "a3bf1da20cee5616e5d1dbce5695e87a78e0c05744bb2628970bc23e46378b74"
       def install
         bin.install "todoplusplus"
       end
