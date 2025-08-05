@@ -5,20 +5,20 @@
 class Todoplusplus < Formula
   desc "A TUI to track your competitive programming grind."
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.0/todoplusplus_0.1.0_darwin_amd64.tar.gz"
-      sha256 "423a2a11cd0c02479a9ddd43d8e6f32e42939eda516e4611a47b97a0c8930122"
+      url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.1/todoplusplus_0.1.1_darwin_amd64.tar.gz"
+      sha256 "2957a4d35ea98bb4906bd4000755774eeb704534bf3a59da054adf588fab6f6b"
 
       def install
         bin.install "todoplusplus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.0/todoplusplus_0.1.0_darwin_arm64.tar.gz"
-      sha256 "11a5057e8f44abd83a768d559dbd70a8e21eb0b699b24f18cbfc1d7765c6f149"
+      url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.1/todoplusplus_0.1.1_darwin_arm64.tar.gz"
+      sha256 "86f97082527748e6b3b200a4921411f50c90f967d3dd8b42971ec1e885364b15"
 
       def install
         bin.install "todoplusplus"
@@ -28,15 +28,15 @@ class Todoplusplus < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.0/todoplusplus_0.1.0_linux_amd64.tar.gz"
-      sha256 "2c1282f9974a484b6b9b124e1f9b5a6b1281fc2e65062886b980db08b62cdcc6"
+      url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.1/todoplusplus_0.1.1_linux_amd64.tar.gz"
+      sha256 "2bd938208d3ba367b1edb41b193c1bd7fa8391211543af1ebf5008be37596063"
       def install
         bin.install "todoplusplus"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.0/todoplusplus_0.1.0_linux_arm64.tar.gz"
-      sha256 "a3bf1da20cee5616e5d1dbce5695e87a78e0c05744bb2628970bc23e46378b74"
+      url "https://github.com/Harschmann/todoplusplus/releases/download/v0.1.1/todoplusplus_0.1.1_linux_arm64.tar.gz"
+      sha256 "d15b284d65c079e754e7c8c6bf63e12acf0e2a79fe9b7dcb3b952b8c6db55981"
       def install
         bin.install "todoplusplus"
       end
